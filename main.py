@@ -7,12 +7,6 @@ intents = discord.Intents.default()
 intents.members = True
 intents.presences = True  # Обязательно для получения статусов игроков
 
-
-@client.command()
-async def ping(ctx):
-    await ctx.send("pong!")
-
-
 class MyClient(discord.Client):
 
     def __init__(self):
